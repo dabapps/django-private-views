@@ -20,7 +20,7 @@ setup(
     version=version,
     description='Site-wide login protection',
     author='Julien Phalip',
-    url='https://github.com/dabapps/privateviews',
+    url='https://github.com/dabapps/django-private-views',
     packages=['privateviews', ],
     install_requires=[],
     license='BSD',
