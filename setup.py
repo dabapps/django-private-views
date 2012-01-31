@@ -18,6 +18,7 @@ if sys.argv[-1] == 'publish':
 setup(
     name='django-private-views',
     version=version,
+    description='Site-wide login protection',
     long_description=open('README.md').read(),
     author='Julien Phalip',
     url='https://github.com/dabapps/privateviews',
