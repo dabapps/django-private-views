@@ -8,6 +8,11 @@ import privateviews
 
 version = privateviews.__version__
 
+try:
+    long_description = open('README.md').read()
+except:
+    long_description = ''
+
 if sys.argv[-1] == 'publish':
     os.system("python setup.py sdist upload")
     print "You probably want to also tag the version now:"
@@ -19,7 +24,7 @@ setup(
     name='django-private-views',
     version=version,
     description='Site-wide login protection',
-    long_description=open('README.md').read(),
+    long_description=long_description,
     author='Julien Phalip',
     url='https://github.com/dabapps/privateviews',
     packages=['privateviews', ],
