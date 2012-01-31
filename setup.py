@@ -3,26 +3,25 @@
 
 import os
 import sys
-
 from distutils.core import setup
-
 import privateviews
 
+version = privateviews.__version__
 
 if sys.argv[-1] == 'publish':
     os.system("python setup.py sdist upload")
+    print "You probably want to also tag the version now:"
+    print "  git tag -a %s -m 'version %s'" % (version, version)
+    print "  git push --tags"
     sys.exit()
-
-
-required = []
 
 setup(
     name='django-private-views',
-    version=privateviews.__version__,
+    version=version,
     long_description=open('README.md').read(),
     author='Julien Phalip',
     url='https://github.com/dabapps/privateviews',
     packages=['privateviews', ],
-    install_requires=required,
+    install_requires=[],
     license='BSD',
 )
