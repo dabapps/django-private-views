@@ -17,7 +17,7 @@ if sys.argv[-1] == 'publish':
 required = []
 
 setup(
-    name='privateviews',
+    name='django-private-views',
     version=privateviews.__version__,
     long_description=open('README.md').read(),
     author='Julien Phalip',
