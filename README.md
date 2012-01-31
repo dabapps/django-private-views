@@ -27,7 +27,7 @@ Installation
 
 Install `django-private-views` from PyPI.
 
-    pip install django-public-views
+    pip install django-private-views
 
 Add the `privateviews` middleware to your settings:
 
