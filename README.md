@@ -94,6 +94,20 @@ file. Here’s an example:
         '^/accounts/register/complete/$', # Uses the 'direct_to_template' generic view
     ]
 
+Making 404 views private
+========================
+
+At this point non-logged in users will still be able to see 404 views if they
+visit a url that doesn't map to a view.  That's not ideal as it shouldn't be
+possible to determine the site structure without being logged in.
+
+To make 404 views private to everyone except logged in users, add the following
+as the final line in your top level urlconf:
+
+    urlpatterns = patterns('',
+        ...
+        url(r'^', 'privateviews.views.private_404')
+    )
 
 License
 =======
