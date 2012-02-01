@@ -27,7 +27,7 @@ Installation
 
 Install `django-private-views` from PyPI.
 
-    pip install django-public-views
+    pip install django-private-views
 
 Add the `privateviews` middleware to your settings:
 
@@ -40,8 +40,8 @@ Add the `privateviews` middleware to your settings:
 Declaring public views
 ======================
 
-At this point, all of your views will require you to log in, including the
-login page itself. So, we now need to specify the few views that should be
+At this point, all of your views except `settings.LOGIN_URL` will require
+you to log in.  So, we now need to specify the few views that should be
 public. There are three different ways at your disposal: using a special
 decorator, listing the public views, or listing the public URL paths.
 
