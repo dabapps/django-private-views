@@ -125,4 +125,3 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 [1]: http://twitter.com/julienphalip
 [2]: http://twitter.com/_tomchristie
 [3]: http://julienphalip.com/post/2824985334/site-wide-login-protection-and-public-views
-[4]: http://unlicense.org/
