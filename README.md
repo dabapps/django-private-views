@@ -70,7 +70,6 @@ you’re using the `django.contrib.auth` system and the `django-registration`
 application:
 
     PUBLIC_VIEWS = [
-        'django.contrib.auth.views.login',
         'django.contrib.auth.views.password_reset_done',
         'django.contrib.auth.views.password_reset',
         'django.contrib.auth.views.password_reset_confirm',
@@ -84,13 +83,10 @@ Listing URL public paths
 
 The third and last way is to directly specify the URL paths (as regular
 expressions) for the pages you want to be public. This can be useful, for
-example, if a page is rendered by a generic view. It is also useful if you are
-serving your media files statically via Django (only recommended in development
-mode). For that, you need to add the `PUBLIC_PATHS` setting in your settings
-file. Here’s an example:
+example, if a page is rendered by a generic view. For that, you need to add
+the `PUBLIC_PATHS` setting in your settings file. Here’s an example:
 
     PUBLIC_PATHS = [
-        '^%s' % MEDIA_URL,
         '^/accounts/register/complete/$', # Uses the 'direct_to_template' generic view
     ]
 
