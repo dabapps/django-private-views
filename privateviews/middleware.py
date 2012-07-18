@@ -18,7 +18,7 @@ class LoginRequiredMiddleware(object):
             for public_path in settings.PUBLIC_PATHS:
                 self.public_patterns.append(re.compile(public_path))
         if hasattr(settings, 'LOGIN_URL'):
-            pattern = re.compile(re.escape(settings.LOGIN_URL))
+            pattern = re.compile(r'^%s$' % re.escape(settings.LOGIN_URL))
             self.public_patterns.append(pattern)
 
     def get_view(self, view_path):
