@@ -20,3 +20,8 @@ class PrivateViewsTestCase(TestCase):
         """View listed in settings.PUBLIC_VIEWS"""
         response = self.client.get('/test-public-views/')
         self.assertEqual(response.status_code, 200)
+
+    def test_list_public_paths(self):
+        """View listed in settings.PUBLIC_PATHS"""
+        response = self.client.get('/test-public-paths/')
+        self.assertEqual(response.status_code, 200)

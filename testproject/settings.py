@@ -21,6 +21,10 @@ PUBLIC_VIEWS = [
     'testproject.views.test_public_views',
 ]
 
+PUBLIC_PATHS = [
+    '^/test-public-paths/$'
+]
+
 INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.auth',
