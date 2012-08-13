@@ -17,6 +17,10 @@ MIDDLEWARE_CLASSES = [
     'privateviews.middleware.LoginRequiredMiddleware',
 ]
 
+PUBLIC_VIEWS = [
+    'testproject.views.test_public_views',
+]
+
 INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.auth',
