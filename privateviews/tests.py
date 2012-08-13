@@ -13,7 +13,7 @@ class PrivateViewsTestCase(TestCase):
         self.assertTrue('accounts/login' in response['Location'])
 
     def test_decorated_view(self):
-        response = self.client.get('/decorated/')
+        response = self.client.get('/test-decorator/')
         self.assertEqual(response.status_code, 200)
 
     def test_list_public_views(self):
