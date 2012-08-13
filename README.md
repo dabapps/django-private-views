@@ -7,6 +7,8 @@ Django Private Views
 
 **Packaged and released by:** Tom Christie, [@_tomchristie][2].
 
+[![Build Status](https://secure.travis-ci.org/dabapps/django-private-views.png)](http://travis-ci.org/dabapps/django-private-views)
+
 Overview
 ========
 
