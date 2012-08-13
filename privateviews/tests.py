@@ -16,6 +16,15 @@ class PrivateViewsTestCase(TestCase):
         response = self.client.get('/test-decorator/')
         self.assertEqual(response.status_code, 200)
 
+    def test_undecorated_class_based_view(self):
+        response = self.client.get('/test-undecorated-class-based-view/')
+        self.assertEqual(response.status_code, 302)
+        self.assertTrue('accounts/login' in response['Location'])
+
+    def test_decorated_class_based_view(self):
+        response = self.client.get('/test-decorated-class-based-view/')
+        self.assertEqual(response.status_code, 200)
+
     def test_list_public_views(self):
         """View listed in settings.PUBLIC_VIEWS"""
         response = self.client.get('/test-public-views/')
