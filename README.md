@@ -107,6 +107,28 @@ as the final line in your top level urlconf:
         url(r'^', 'privateviews.views.private_404')
     )
 
+Running the tests
+=================
+
+If you have cloned the source repo, you can run the tests using the
+provided `manage.py`:
+
+    python manage.py test privateviews
+
+Changelog
+=========
+
+1.1
+---
+
+* Add basic test suite
+* Fix issue with `login_not_required` decorator.
+
+1.0
+---
+
+* Initial release
+
 License
 =======
 
