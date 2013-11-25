@@ -35,7 +35,7 @@ Add the `privateviews` middleware to your settings:
 
     MIDDLEWARE_CLASSES = (
         ...
-        privateviews.middleware.LoginRequiredMiddleware
+        'privateviews.middleware.LoginRequiredMiddleware',
     )
 
 
