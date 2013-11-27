@@ -38,7 +38,6 @@ Add the `privateviews` middleware to your settings:
         'privateviews.middleware.LoginRequiredMiddleware',
     )
 
-
 Declaring public views
 ======================
 
