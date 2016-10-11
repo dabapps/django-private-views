@@ -6,6 +6,8 @@ DATABASES = {
     },
 }
 
+SECRET_KEY = 'SUPERSEKRIT'
+
 ROOT_URLCONF = 'testproject.urls'
 
 MIDDLEWARE_CLASSES = [

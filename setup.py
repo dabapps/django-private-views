@@ -10,9 +10,9 @@ version = privateviews.__version__
 
 if sys.argv[-1] == 'publish':
     os.system("python setup.py sdist upload")
-    print "You probably want to also tag the version now:"
-    print "  git tag -a %s -m 'version %s'" % (version, version)
-    print "  git push --tags"
+    print("You probably want to also tag the version now:")
+    print("  git tag -a %s -m 'version %s'" % (version, version))
+    print("  git push --tags")
     sys.exit()
 
 setup(
