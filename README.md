@@ -101,10 +101,10 @@ be possible to determine the site structure without being logged in.
 To make 404 views private to everyone except logged in users, add the following
 as the final line in your top level urlconf:
 
-    urlpatterns = patterns('',
+    urlpatterns = [
         ...
         url(r'^', 'privateviews.views.private_404')
-    )
+    ]
 
 Running the tests
 =================
@@ -116,6 +116,11 @@ provided `manage.py`:
 
 Changelog
 =========
+
+1.2
+---
+
+* Fixed issue for Python 3
 
 1.1
 ---
