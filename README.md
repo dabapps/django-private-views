@@ -23,6 +23,8 @@ to forget to decorate some of them.
 `django-private-views` protects every view and then lets you explicitly tell which
 views should be public. This makes things both easier and less error-prone.
 
+## DEPRECATED
+**PLEASE NOTE:** _This repository is no longer actively maintained or regularly used by DabApps and therefore should be considered deprecated. Please find alternative packages for your needs or feel free to create and maintain your own fork._
 
 Installation
 ============
